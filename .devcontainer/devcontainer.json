@@ -2,14 +2,14 @@
     "name": "Esku keinu detekzioa",
     // Use the Dockerfile as the base image
     "dockerFile": "Dockerfile",
-    // Use 'tknika' as the container user
-    "remoteUser": "tknika",
+    // Use 'lburgoa' as the container user
+    "remoteUser": "lburgoa",
     // Pass webcam device to the container
     "runArgs": [
         "--device=/dev/video0"
     ],
     "mounts": [
-        "source=/home/tknika/curso_ros,target=/tmp/curso_ros,type=bind,consistency=cached"
+        "source=/home/lburgoa/curso_ros,target=/tmp/curso_ros,type=bind,consistency=cached"
     ],
     "customizations": {
         // Configure properties specific to VS Code.
